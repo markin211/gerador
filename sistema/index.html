@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Código HTML para Lightbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Gerador de Código HTML com Lightbox</h2>
+
+    <div id="dropZone" class="drop-zone">
+        Arraste uma imagem aqui ou clique para selecionar
+    </div>
+
+    <label for="tipoImagem">A imagem é de:</label>
+    <select id="tipoImagem" onchange="atualizarCategoria()">
+        <option value="">Selecione...</option>
+        <option value="mangá">Mangá</option>
+        <option value="manhwa">Manhwa</option>
+        <option value="gestual">Gestual</option>
+    </select>
+
+    <div id="categoriaContainer" class="hidden">
+        <label for="categoriaImagem">Categoria:</label>
+        <select id="categoriaImagem">
+            <option value="">Selecione...</option>
+            <option value="cabeça">Cabeça</option>
+            <option value="corpo">Corpo</option>
+            <option value="outfit">Outfit</option>
+        </select>
+    </div>
+
+    <label for="altText">Nome da Imagem (alt):</label>
+    <input type="text" id="altText" placeholder="Desenho 1">
+
+    <button onclick="gerarCodigo()">Gerar Código</button>
+
+    <div class="code-block">
+        <h3>Código 1:</h3>
+        <textarea id="codigo1" readonly></textarea>
+    </div>
+
+    <div class="code-block">
+        <h3>Código 2:</h3>
+        <textarea id="codigo2" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+
+    </script>
+</body>
+</html>
