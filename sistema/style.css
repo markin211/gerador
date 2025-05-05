@@ -12,3 +12,6 @@ textarea { width: 100%; height: 130px; margin-top: 10px; }
 }
 .drop-zone.hover { background-color: #e1f5fe; }
 .hidden { display: none; }
+h2{
+    text-align: center;
+}
